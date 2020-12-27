@@ -12,3 +12,12 @@ source ~/.sync/.config/.vimrc
 catch
 endtry" >> ~/.vimrc
 fi
+
+touch ~/.zshrc
+if grep -q '.sync/.config/updater.sh' ~/.zshrc
+then
+    echo "updater pass enable"
+else
+    echo "~/.sync/updater.sh" >> ~/.zshrc
+fi
+
