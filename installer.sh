@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p .sync
-git clone git@github.com:blacktrub/vscode-config.git .sync
+git clone git@github.com:blacktrub/synchronizator9000.git .sync
 
 touch ~/.vimrc
 if grep -q '.sync/.config/.vimrc' ~/.vimrc
