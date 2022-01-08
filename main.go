@@ -22,16 +22,16 @@ func commitChanges() (bool, error) {
 		return false, err
 	}
 	if strings.Contains(statusOut, "working tree clean") {
-	    return false, nil
+		return false, nil
 	}
 
-    gitCommand("add", ".")
-    gitCommand("commit", "-m", "auto update config")
-    _, err = gitCommand("push")
+	gitCommand("add", ".")
+	gitCommand("commit", "-m", "auto update config")
+	_, err = gitCommand("push")
 	if err != nil {
 		return false, err
 	}
-    return true, nil
+	return true, nil
 }
 
 func syncFromRemote() (bool, error) {
