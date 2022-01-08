@@ -19,6 +19,5 @@ then
 fi
 
 echo "create symlink to sync config"
-ln -s ~/.sync/.config ~/.cnf
-ln -s ~/.cnf ~/.sync/.config
+ln -s ~/.cnf ~/.sync/.config/
 
