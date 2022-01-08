@@ -26,7 +26,7 @@ func commitChanges() (bool, error) {
 	}
 
     gitCommand("add", ".")
-    gitCommand("commit", "-m", "'auto update config'")
+    gitCommand("commit", "-m", "auto update config")
     _, err = gitCommand("push")
 	if err != nil {
 		return false, err
