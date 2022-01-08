@@ -12,12 +12,12 @@ else
     cat ~/.sync/crontab.txt >> /var/spool/cron/bt
 fi
 
-if [[ -d "~/.config" ]]
+if [[ -d "~/.cnf" ]]
 then
     echo "config directory exists, backup to .config_old"
-    mv .config .config_old
+    mv .cnf .cnf_old
 fi
 
 echo "create symlink to sync config"
-ln -s ~/.config ~/.sync/.config
+ln -s ~/.cnf ~/.sync/.config
 
