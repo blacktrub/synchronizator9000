@@ -1,1 +1,1 @@
-*/5 * * * * go run ~/.sync/main.go
+*/5 * * * * cd ~/.sync/ && go run ~/.sync/main.go
