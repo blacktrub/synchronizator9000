@@ -15,7 +15,7 @@ fi
 if [[ -d "~/.cnf" ]]
 then
     echo "config directory exists, backup to .config_old"
-    mv .cnf .cnf_old
+    mv ~/.cnf ~/.cnf_old
 fi
 
 echo "create symlink to sync config"
